@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+  "name": "Trump Replace",
+  "description": "Replaces all instances of Trump's name on every page with something more tolerable.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
