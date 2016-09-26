@@ -157,7 +157,9 @@ var trump_names = [
   'Zen Master of Hate',
   'Cheeto-dusted bloviator',
   'Walking, Talking Human Combover Sent to Earth to Seek Revenge by Hitler\'s Moustache',
-  'Cowardly Lion\'s Enormous Orange Hairball of Fear Brought to Life by the Wicked Witch of the West'
+  'Cowardly Lion\'s Enormous Orange Hairball of Fear Brought to Life by the Wicked Witch of the West',
+  'Hee-Haw Hitler',
+  'Manhattan Mussolini'
 ];
 
 function replace_trumps () {
