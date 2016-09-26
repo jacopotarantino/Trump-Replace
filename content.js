@@ -172,7 +172,7 @@ function replace_trumps () {
       if (node.nodeType === 3) {
         var text = node.nodeValue;
         var replacedText = text.replace(
-          /(?:Mr\.? )?(?:Donald )?(?:J\.?(?:ohn)? )?Trump/gi,
+          /(Donald.*?)?Trump/gi,
           trump_names[Math.floor(Math.random()*trump_names.length)]
         );
 
