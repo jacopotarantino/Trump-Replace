@@ -185,10 +185,9 @@ function replace_trumps () {
 
       if (node.nodeType === 3) {
         var text = node.nodeValue;
-        var replacedText = text.replace(
-          /((the_){0,}Donald.*?)?Trump/gi,
-          trump_names[Math.floor(Math.random()*trump_names.length)]
-        );
+        var replacedText = text.replace(/((the_){0,}Donald.*?)?Trump/gi, function () {
+          return trump_names[Math.floor(Math.random()*trump_names.length)];
+        });
 
         if (replacedText !== text) {
           element.replaceChild(document.createTextNode(replacedText), node);
