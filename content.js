@@ -209,12 +209,8 @@ document.onreadystatechange = function () {
 window.onload = function () {
   replace_trumps();
 };
-window.setTimeout(function () {
+// run it on an interval to get content in dynamic sites like facebook
+// and news sites that infinite scroll.
+window.setInterval(function () {
   replace_trumps();
-}, 200);
-window.setTimeout(function () {
-  replace_trumps();
-}, 500);
-window.setTimeout(function () {
-  replace_trumps();
-}, 1500);
+}, 800);
